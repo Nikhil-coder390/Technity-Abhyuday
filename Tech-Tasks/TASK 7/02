@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int i, n, sum = 0;
+    int a = 0, b = 1, c;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Even Fibonacci Series: ");
+    for (i = 1; i <= n; i++)
+    {
+        c = a + b;
+        a = b;
+        b = c;
+
+        if (c % 2 == 0)
+        {
+            printf("%d ", c);
+            sum = sum + c;
+        }
+    }
+
+    printf("\nSum of Even Fibonacci Series: %d", sum);
+
+    return 0;
+} 

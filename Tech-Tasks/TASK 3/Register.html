@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/Resources/Used Images/technity.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" method="post">
+                    <h2>Technity Registration</h2>
+                    <div class="inputbox">
+                        <ion-icon name="name-outline"></ion-icon>
+                        <input type="text" id="name" name="name" onkeyup="validateName()" required>
+                        <label for="name">Name</label>
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" name="email" required onkeyup="validateMail()">
+                        <label for="email">Amrita Mail Id</label>
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" name="password" required onkeyup="validatePassword()">
+                        <label for="password">Password</label>
+                        <span id="pass-error"></span>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="retype-password" name="retype-password" required onkeyup="validateRePassword()">
+                        <label for="retype-password">Retype-Password</label>
+                        <span id="retype-pass-error"></span>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="check-box-outline"></ion-icon>
+                        <input type="checkbox" id="tech" name="tech">
+                        <label for="tech">Tech</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="check-box-outline"></ion-icon>
+                        <input type="checkbox" id="designing" name="designing">
+                        <label for="designing">Designing</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="check-box-outline"></ion-icon>
+                        <input type="checkbox" id="literature" name="literature">
+                        <label for="literature">Literature and Oration</label>
+                    </div>
+                    <div class="input-box">
+                        <ion-icon name="check-box-outline"></ion-icon>
+                        <input type="checkbox" id="innovative-thinking" name="innovative-thinking">
+                        <label for="innovative-thinking">Innovative Thinking and Creativity</label>
+                    </div>
+                    <div class="terms">
+                        <label>
+                            <input type="checkbox" id="terms" name="terms" required><a href="#">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <div class="button">
+                        <a href="#" onclick=validateRegister()><h3>Register</h3></a>
+                        <span id="register-error"></span>
+                    </div>
+                    <div class="login">
+                        <p>Already Registered ? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="index.js"></script>
+</body>
+
+</html>

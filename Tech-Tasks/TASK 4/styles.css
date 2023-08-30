@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+.w {
+    background-color: white;
+    color: black;
+    border: 7px solid #4CAF50;
+}
+.w:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+.a {
+  background-color: white;
+  color: black;
+  border: 7px solid #4CAF50;
+}
+.a:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+.s {
+  background-color: white;
+  color: black;
+  border: 7px solid #4CAF50;
+}
+.s:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+.d {
+  background-color: white;
+  color: black;
+  border: 7px solid #4CAF50;
+}
+.d:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+
+.j {
+  background-color: white;
+  color: black;
+  border: 7px solid #4CAF50;
+}
+.j:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+.k {
+  background-color: white;
+  color: black;
+  border: 7px solid #4CAF50;
+}
+.k:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+.l {
+  background-color: white;
+  color: black;
+  border: 7px solid #4CAF50;
+}
+.l:hover {
+  box-shadow: 0 12px 16px 0 rgba(220, 220, 7, 0.24), 0 17px 50px 0 rgba(220, 220, 7, 0.24);
+}
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  font-size: 5rem;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}

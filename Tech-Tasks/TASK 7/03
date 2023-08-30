@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <math.h>
+int largest_prime_factor(int n)
+{
+  
+    int max_prime_factor = -1;
+
+    for (int i = 2; i <= sqrt(n); i++)
+    {
+        if (n % i == 0)
+        {
+            n = n / i;
+
+            max_prime_factor = i;
+        }
+    }
+
+    if (max_prime_factor == -1)
+    {
+        max_prime_factor = n;
+    }
+
+
+    return max_prime_factor;
+}
+
+int main()
+{
+    int n = 15;
+    int max_prime_factor = largest_prime_factor(n);
+    printf("The largest prime factor of %d is %d.\n", n, max_prime_factor);
+
+    n = 16;
+    max_prime_factor = largest_prime_factor(n);
+    printf("The largest prime factor of %d is %d.\n", n, max_prime_factor);
+
+    return 0;
+}

@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int is_palindrome(int n) {
+ 
+
+  int reversed = 0, original = n;
+
+
+  while (n > 0) {
+    reversed = reversed * 10 + (n % 10);
+    n /= 10;
+  }
+
+
+  return (reversed == original);
+}
+
+int main() {
+  int N;
+
+
+  printf("Enter a value for N: ");
+  scanf("%d", &N);
+
+ 
+  int largest_palindrome = 0;
+  for (int i = 100; i < 1000; i++) {
+    for (int j = 100; j < 1000; j++) {
+      int product = i * j;
+      if (product < N && is_palindrome(product) && product > largest_palindrome) {
+        largest_palindrome = product;
+      }
+    }
+  }
+
+  printf("The largest palindrome made from the product of two 3-digit numbers which is less than %d is: %d\n", N, largest_palindrome);
+
+  return 0;
+}
+

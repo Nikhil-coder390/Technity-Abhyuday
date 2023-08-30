@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 Form Validation</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" type="image/x-icon" href="/Resources/Used Images/technity.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" method="post">
+                    <h2>Technity Log-in</h2>
+                    <div class="inputbox">
+                        <ion-icon name="name-outline"></ion-icon>
+                        <input type="text" id="name" name="name" onkeyup="validateName()" required>
+                        <label for="name">Name</label>
+                        <span id="name-error"></span>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" id="email" name="email" required onkeyup="validateMail()">
+                        <label for="email">Amrita Mail Id</label>
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" id="password" name="password" required onkeyup="validatePassword()">
+                        <label for="password">Password</label>
+                        <span id="pass-error"></span>
+                    </div>
+                    <div class="forget">
+                        <label for="">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <label for="">
+                            <a href="#">Forgot Password?</a>
+                        </label>
+                    </div>
+                    <button>
+                        <h3>Login</h3>
+                    </button>
+                    <div class="login">
+                        <p>Don't have a account ? <a href="Register.html">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<script src="index.js"></script>
+</body>
+
+</html>

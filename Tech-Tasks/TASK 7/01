@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int N, i, sum = 0;
+
+    printf("Enter a positive integer: ");
+    scanf("%d", &N);
+
+    for (i = 1; i < N; i++)
+    {
+        if (i % 3 == 0 || i % 5 == 0)
+        {
+            sum += i;
+        }
+    }
+
+    printf("Sum of all the multiples of 3 or 5 below %d = %d", N, sum);
+
+    return 0;
+ }

@@ -1,0 +1,176 @@
+/**
+ * =================================================================== 
+ *  08-08-2023
+ *  Task-01 Css File
+ *  ------------------------------------------------------------------
+ *  TOC:
+ *  01. Common Style
+ *  02. Navigation-Bar
+ *  03. Create.co css
+ *  04. Content-Information
+ *  05. Slide-Show
+ *  06. Social Media Links
+ * =================================================================== 
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); /*imported Montserrat Font*/
+*{
+    /* common style*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3f0ff;
+}
+/* navigation bar*/
+.nav-bar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Create.Co Css */
+.navigation-brand{
+    width: 120px;
+    cursor: pointer;
+    color: #2d2c62;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px 0 40px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: #2d2c62;
+}
+.nav-bar ol li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 1px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav-bar ol li button{
+    text-decoration: none;
+    background-color: #5654b3;
+    margin: 0 8px;
+    border-color: #5654b3;
+    border: 0;
+    border-radius: 6px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #e3f0ff;
+}
+.nav-bar ol li button a{
+    text-decoration: none;
+    background-color: #5654b3;
+    color: #e3f0ff;
+}
+/* Content_information */
+.content-information{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    text-transform: capitalize;
+    margin-left: 7rem;
+    margin-top: 7%;
+    line-height: 3rem;
+    letter-spacing: .1rem;
+    color: #2d2c62;
+    font-size: 2rem;
+}
+.content-paragraph{
+    line-height: 1.3rem;
+    margin-top: 2%;
+    color: #78779d;
+    font-size: .9rem;
+    text-align: left;
+}
+.content span:before{
+    content: ' ';
+}
+.content span{
+    color: #fa676d;
+}
+.content-img img{
+    width: 96%;
+    height: auto;
+    margin-top: 3%;
+    position: relative;
+}
+/* Slide-Show */
+.mySlides {
+    display: none;
+}
+.dot-position{
+    text-align: center;
+    left: 84%;
+    bottom: 6%;
+    position: absolute;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* For Email And Learn More */
+.container-fluid input {
+    background-color: #ffffff;
+    border: 0;
+    border-radius: 2px;
+    padding: 8px;
+    font-size: 16px;
+    margin-top: 1%;
+    text-transform: capitalize;
+}
+.container-fluid button{
+    text-decoration: none;
+    background-color: #5654b3;
+    border-color: #5654b3;
+    border: 0;
+    border-radius: 2px;
+    text-align: center;
+    padding: 10px 30px;
+    color: #e3f0ff;
+}
+.container-fluid button a{
+    text-decoration: none;
+    background-color: #5654b3;
+    color: #e3f0ff;
+}
+/* Social-Media Links*/
+.social-info ul li{
+    list-style: none;
+    margin: 87px 6px 0 6px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.9rem;
+}
+.social-info ul li a i{
+    border-radius: 4px;
+    border: 0;
+    padding: 5px;
+    background-color: #5654b3;
+    color: #ffffff;
+}
